@@ -1,0 +1,94 @@
+/*B O T O N    P R I N C I P A L*/
+.btn {
+	margin: 0 auto 30px auto !important;
+	display: block;
+}
+.btn span{
+	font-size: 1.28rem;
+	font-weight: 600;
+	margin-right: 2px !important;
+}
+.btn-2{
+	align-self: center;
+}
+.boton{
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    letter-spacing: 0.1em;
+    padding: 10px 20px !important;
+    font-family: var(--font-boton);
+    text-transform: none !important;
+  /* font-size: 16px !important; */
+    font-weight: 600 !important;
+}
+
+.boton-servicios, .boton-formulario {
+  color: black;
+  background: transparent;
+  border: 3px solid  black ;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  transform: translate(0, 0);
+}
+.boton-servicios:hover, .boton-formulario:hover {
+  background: #d0f9c7;
+  color: var(--color-principal);
+  border: 3px solid var(--color-principal);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.boton-formulario {
+  color: #fff !important;
+  background: var(--color-principal)!important;
+  border: 3px solid var(--color-principal)!important;
+}
+.boton-formulario:hover {
+  background: #fff !important;
+  color: var(--color-principal)!important;
+  border: 3px solid var(--color-principal)!important;
+  overflow: hidden !important;
+}
+.boton-servicios:active, .boton-formulario:active{
+-webkit-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);	
+}
+
+
+.boton-proyectos {
+  color: var(--color-principal);
+  background: #d0f9c7;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.boton-proyectos:hover {
+  background: transparent;
+  color: var(--color-principal);
+  transition: all 0.35s ease;
+}
+.boton-proyectos:hover:before,
+.boton-proyectos:hover:after {
+  transition: all 0.7s ease;
+  width: 100%;
+}
+.boton-proyectos:before,
+.boton-proyectos:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  background: var(--color-principal);
+  transition: all 0.4s ease;
+}
+.boton-proyectos:after {
+  top: inherit;
+  left: inherit;
+  bottom: 0;
+  right: 0;
+
+}

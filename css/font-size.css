@@ -1,0 +1,56 @@
+:root {
+    /* Considerando un vw min de 320 px y un vw max de 1536px;
+
+    step-0: 10px, 11px, 12px; (footer small)
+    step-1: 11px, 12px, 13px; (footer medium)
+    step-2: 13px, 15px, 16px(subtitulo small)
+    step-3: 14px, 15px, 18px(parráfos)
+    step-4: 15px, 16px, 20px(titulos small)
+    step-5: 16px,  17px - 33px ,34px(titulos medium)
+    step-6: 19px,  20px 36px ,37px(titulos large)
+    step-7: 24px,  ,45px(titulos x-large)
+    step-8: 30px,  33px 59px ,60px(titulo xx-large) 
+    step-9: 38px , 80px*/
+
+    --step-0: clamp(0.62rem,  0.31rem   +  0.61vw,  0.75rem);
+    --step-1: clamp(0.68rem,  0.36rem   +  0.61vw,  0.81rem);
+    --step-2: clamp(0.81rem,  0.42rem   +  0.80vw,  1rem);
+    --step-3: clamp(0.87rem,  0.4375rem +  0.80vw,  1.12rem);
+    --step-4: clamp(0.93rem,  0.4375rem +  0.85vw,  1.25rem);
+    --step-5: clamp(1rem,     0.60rem   +  1.35vw,  2.37rem);
+    --step-6: clamp(1.18rem, 0.875rem + 1.5vw, 2.5rem);
+    --step-7: clamp(1.5rem, 0.84rem + 2vw, 2.81rem);
+    --step-8: clamp(1.875rem, 1.125rem + 3vw, 3.75rem);
+    --step-9: clamp(2.375rem, 1.163rem + 4.7vw, 5rem);
+}
+
+.step-0{
+    font-size: var(--step-0);
+}
+.step-1{
+    font-size: var(--step-1);
+}
+.step-2{
+    font-size: var(--step-2);
+}
+.step-3{
+    font-size: var(--step-3);
+}
+.step-4{
+    font-size: var(--step-4);
+}
+.step-5{
+    font-size: var(--step-5);
+}
+.step-6{
+    font-size: var(--step-6);
+}
+.step-7{
+    font-size: var(--step-7);
+}
+.step-8{
+    font-size: var(--step-8);
+}
+.step-9{
+    font-size: var(--step-9);
+}
